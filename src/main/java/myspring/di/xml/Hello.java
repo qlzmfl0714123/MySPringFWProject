@@ -8,9 +8,11 @@ public class Hello {
 	List<String> names;
 
 	public Hello() {
+		System.out.println(this.getClass().getName() + " 생성자가 호출됨");
 	}
 
 	public Hello(String name, Printer printer) {
+		System.out.println(this.getClass().getName() + " Overloaded 생성자가 호출됨");
 		this.name = name;
 		this.printer = printer;
 	}
@@ -25,9 +27,11 @@ public class Hello {
 
 	public void setName(String name) {
 		this.name = name;
+		System.out.println(this.getClass().getName() + " setName() 호출됨" + name);
 	}
 
 	public void setPrinter(Printer printer) {
+		System.out.println(this.getClass().getName() + " setPrinter() 호출됨" + printer.getClass().getName());
 		this.printer = printer;
 	}
 
