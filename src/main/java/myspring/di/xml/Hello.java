@@ -25,13 +25,15 @@ public class Hello {
 		this.names = list;
 	}
 
+	//setFirstName
 	public void setName(String name) {
+		System.out.println(this.getClass().getName() + " setName() 호출됨 " + name);
 		this.name = name;
-		System.out.println(this.getClass().getName() + " setName() 호출됨" + name);
 	}
 
 	public void setPrinter(Printer printer) {
-		System.out.println(this.getClass().getName() + " setPrinter() 호출됨" + printer.getClass().getName());
+		System.out.println(this.getClass().getName() + " setPrinter() 호출됨 " + 
+				printer.getClass().getName());
 		this.printer = printer;
 	}
 
